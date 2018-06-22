@@ -4,7 +4,7 @@ To use Bitski as your Truffle wallet, run `npm install --save-dev bitski-truffle
 
 Then set up your `truffle.js` to look something like this:
 
-```json
+```javascript
 const BitskiTruffleProvider = require('bitski-truffle-provider');
 
 const bitskiCredentials = {
