@@ -1,0 +1,15 @@
+{
+  "name": "bitski-truffle-provider",
+  "version": "0.1.0",
+  "description": "Bitski Web3 Provider for Truffle",
+  "main": "index.js",
+  "author": "Patrick Tescher <patrick@outtherelabs.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-rpc-error": "^2.0.0",
+    "request": "^2.87.0",
+    "simple-oauth2": "^2.2.0",
+    "util": "^0.11.0",
+    "web3-provider-engine": "^14.0.6"
+  }
+}
