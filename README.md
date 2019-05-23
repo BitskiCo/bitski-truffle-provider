@@ -1,5 +1,9 @@
 # Bitski Truffle Provider
 
+**Note: This package is no longer necessary.**
+
+Use [bitski-node](https://github.com/BitskiCo/bitski-node) instead. See the README for more information.
+
 To use Bitski as your Truffle wallet, run `npm install --save-dev bitski-truffle-provider`.
 
 Then set up your `truffle.js` to look something like this:
