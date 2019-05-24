@@ -1,6 +1,7 @@
 const OAuth2 = require('simple-oauth2');
 const ProviderEngine = require("web3-provider-engine");
 const FiltersSubprovider = require('web3-provider-engine/subproviders/filters.js');
+const SubscriptionSubprovider = require('web3-provider-engine/subproviders/subscriptions.js');
 const ProviderSubprovider = require("web3-provider-engine/subproviders/provider.js");
 const Subprovider = require("web3-provider-engine/subproviders/subprovider.js");
 const inherits = require('util').inherits;
@@ -95,6 +96,7 @@ function getProvider(network, credentials) {
     const engine = new ProviderEngine();
 
     engine.addProvider(new FiltersSubprovider());
+    engine.addProvider(new SubscriptionSubprovider());
     engine.addProvider(new OAuthProvider({
         rpcUrl: "https://api.bitski.com/v1/web3/" + network,
         credentials: credentials,
